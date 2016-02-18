@@ -91,7 +91,7 @@ limitations under the License.
         }
       });
     });
-    return addEventListener("touchcancel", function(evt) {
+    addEventListener("touchcancel", function(evt) {
       return $.each(evt.changedTouches, function(i, touch) {
         var t;
         t = touches[touch.identifier];
@@ -101,6 +101,7 @@ limitations under the License.
         }
       });
     });
+    return void 0;
   };
 
   Touch.version = "1.0.0";
@@ -110,7 +111,8 @@ limitations under the License.
       var t;
       t = $(this).data("Touch");
       if (t == null) {
-        $(this).data("Touch", new Touch(this, conf));
+        t = new Touch(this, conf);
+        $(this).data("Touch", t);
       }
       return t;
     });

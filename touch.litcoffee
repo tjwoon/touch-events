@@ -95,7 +95,7 @@ Implementation
 
         undefined
 
-    Touch.version = "1.0.0"
+    Touch.version = "1.0.1"
 
 
 jQuery

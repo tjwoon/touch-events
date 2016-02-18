@@ -104,7 +104,7 @@ limitations under the License.
     return void 0;
   };
 
-  Touch.version = "1.0.0";
+  Touch.version = "1.0.1";
 
   $.fn.Touch = function(conf) {
     return this.each(function() {

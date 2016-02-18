@@ -102,7 +102,9 @@ jQuery
     $.fn.Touch = (conf) ->
         @each ->
             t = $(this).data "Touch"
-            unless t? then $(this).data "Touch", new Touch this, conf
+            unless t?
+                t = new Touch this, conf
+                $(this).data "Touch", t
             t
 
     $.Touch = Touch

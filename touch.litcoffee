@@ -93,6 +93,8 @@ Implementation
                     clearTimeout t.longtapTimeoutId
                     delete touches[touch.identifier]
 
+        undefined
+
     Touch.version = "1.0.0"
 
 
